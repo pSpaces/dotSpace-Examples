@@ -8,9 +8,9 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            SequentialSpace dtu = new SequentialSpace();
-            dtu.Put("Hello world!");
-            ITuple tuple = dtu.Get(typeof(string));
+            SequentialSpace inbox = new SequentialSpace();
+            inbox.Put("Hello world!");
+            ITuple tuple = inbox.Get(typeof(string));
             Console.WriteLine(tuple);
             Console.Read();
         }
